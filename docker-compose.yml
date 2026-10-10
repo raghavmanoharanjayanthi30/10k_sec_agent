@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  # SEC EDGAR MCP Server
+  sec-edgar-mcp:
+    image: stefanoamorelli/sec-edgar-mcp:latest
+    environment:
+      - SEC_EDGAR_USER_AGENT=${SEC_EDGAR_USER_AGENT}
+    stdin_open: true
+    tty: true
+
+  # Research Agent API
+  research-agent:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - LANGCHAIN_API_KEY=${LANGCHAIN_API_KEY}
+      - LANGCHAIN_TRACING_V2=true
+      - LANGCHAIN_PROJECT=10k-filing-agent
+      - SEC_EDGAR_USER_AGENT=${SEC_EDGAR_USER_AGENT}
+    depends_on:
+      - sec-edgar-mcp
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock

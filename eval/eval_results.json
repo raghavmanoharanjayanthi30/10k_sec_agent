@@ -1,0 +1,169 @@
+{
+  "timestamp": "2026-10-10T11:22:32.388809",
+  "summary": {
+    "total": 5,
+    "passed": 5,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "avg_llm_score": 4.0
+  },
+  "results": [
+    {
+      "task_id": 1,
+      "question": "What are Apple's main risk factors?",
+      "company": "AAPL",
+      "elapsed_seconds": 36.014567,
+      "fact_checks": {
+        "has_report": true,
+        "has_summary": true,
+        "has_findings": true,
+        "has_citations": true,
+        "no_error": true,
+        "facts_found": 4,
+        "facts_required": 5,
+        "facts_pass": true,
+        "facts_details": [
+          "supply chain",
+          "tariff",
+          "geopolitical",
+          "competition"
+        ],
+        "fact_check_passed": true
+      },
+      "llm_judge": {
+        "score": 4,
+        "explanation": "The response covers the required elements: macroeconomic risks, supply chain concentration in Asia (China mainland, India, Japan, South Korea, Taiwan, Vietnam), trade and tariff risks with specific detail (Q2 2025 tariffs, Section 232 investigation), and competitive pressures. It cites the FY2025 10-K Item 1A and Item 1. The detail is accurate and specific. Weaknesses: it admits that Item 1A was truncated, so it omits other major categories (legal/regulatory, IP, cybersecurity, financial, reliance on key personnel, and the like). It also presents competition as coming from Item 1 and not as an Item 1A risk factor. Citations are general, without precise section references for each claim. Overall it is good and accurate but not comprehensive."
+      },
+      "passed": true,
+      "summary": "Based on the available portion of Apple's FY2025 10-K Item 1A, Apple's main risk factors fall into macroeconomic and industry risks: (1) dependence on global and regional economic conditions, and (2) exposure to political events, trade disputes, tariffs, geopolitical tensions, natural disasters and supply chain disruptions. Item 1 also highlights intense competition as a key business pressure. The Item 1A text is truncated, so the remaining risk categories (e.g., business, legal/regulatory, financial) are not covered here.",
+      "error": null
+    },
+    {
+      "task_id": 2,
+      "question": "What is Microsoft's cloud revenue?",
+      "company": "MSFT",
+      "elapsed_seconds": 13.735776,
+      "fact_checks": {
+        "has_report": true,
+        "has_summary": true,
+        "has_findings": true,
+        "has_citations": true,
+        "no_error": true,
+        "facts_found": 3,
+        "facts_required": 3,
+        "facts_pass": true,
+        "facts_details": [
+          "Microsoft Cloud",
+          "Azure",
+          "billion"
+        ],
+        "fact_check_passed": true
+      },
+      "llm_judge": {
+        "score": null,
+        "explanation": "LLM judge error: Expecting value: line 1 column 1 (char 0)"
+      },
+      "passed": true,
+      "summary": "Microsoft Cloud revenue for fiscal year 2026 (ended June 30, 2026) increased 27% to $214.4 billion, according to the MD&A highlights. This compares with total company revenue of $331.839 billion for the same year, so Microsoft Cloud is roughly 65% of total revenue.",
+      "error": null
+    },
+    {
+      "task_id": 3,
+      "question": "Describe Tesla's business model",
+      "company": "TSLA",
+      "elapsed_seconds": 22.31913,
+      "fact_checks": {
+        "has_report": true,
+        "has_summary": true,
+        "has_findings": true,
+        "has_citations": true,
+        "no_error": true,
+        "facts_found": 3,
+        "facts_required": 3,
+        "facts_pass": true,
+        "facts_details": [
+          "electric",
+          "vehicle",
+          "energy"
+        ],
+        "products_found": 7,
+        "products_required": 7,
+        "products_pass": true,
+        "products_details": [
+          "Model 3",
+          "Model Y",
+          "Model S",
+          "Model X",
+          "Cybertruck",
+          "Powerwall",
+          "Megapack"
+        ],
+        "fact_check_passed": true
+      },
+      "llm_judge": {
+        "score": 5,
+        "explanation": "The response meets both evaluation criteria. It names the two reportable segments, Automotive and Energy Generation and Storage, and explains what each covers. It lists specific vehicle models (Model 3, Y, S, X, Cybertruck, Semi) and energy products (Powerwall, Megapack, Solar Roof, Autobidder, Powerhub). It also covers the direct-sales model, vertical integration, services revenue and the AI/Robotaxi/Optimus strategy, and it uses wording that appears drawn from the 10-K. The only flaw is that some findings are truncated mid-sentence, which is a minor presentation problem."
+      },
+      "passed": true,
+      "summary": "Tesla's stated focus is bringing AI into the real world. It designs, develops, manufactures, sells and leases fully electric vehicles and energy generation and storage systems, and it is building AI-driven software and services (FSD (Supervised), Robotaxi, Optimus humanoid robots) on top of that base. It sells mainly direct to customers, is vertically integrated, and reports two segments: automotive and energy generation and storage.",
+      "error": null
+    },
+    {
+      "task_id": 4,
+      "question": "What are Amazon's main risk factors?",
+      "company": "AMZN",
+      "elapsed_seconds": 36.584343,
+      "fact_checks": {
+        "has_report": true,
+        "has_summary": true,
+        "has_findings": true,
+        "has_citations": true,
+        "no_error": true,
+        "facts_found": 2,
+        "facts_required": 3,
+        "facts_pass": true,
+        "facts_details": [
+          "competition",
+          "economic"
+        ],
+        "fact_check_passed": true
+      },
+      "llm_judge": {
+        "score": 3,
+        "explanation": "The response accurately covers competition, expansion risks, and international operations from Item 1A in good detail. It also adds broader themes from the forward-looking statements, such as tariffs, inflation, litigation, and supply and inventory risks. It cites the 10-K by item (Item 1A and Item 7). However, it admits the Item 1A text was truncated, so it omits major Amazon risk factors: supply chain and fulfillment disruptions, cybersecurity and data breaches, regulatory and legal exposure, tax, intellectual property claims, and stock price volatility. The criteria mention regulatory, economic, and operational risks, and these appear only as a list of themes from Item 7 rather than as Item 1A risk factors. The response is transparent and accurate but incomplete, so it is acceptable rather than good."
+      },
+      "passed": true,
+      "summary": "The provided excerpt of Amazon's 10-K Item 1A covers only the first three risk factors: intense competition, risks from expansion into new products, services, technologies and regions, and risks from international operations. The forward-looking statements in Item 7 list further risk themes, such as tariffs and trade policy, inflation, supply volatility including memory chips, litigation and government investigations, and inventory and fulfillment risks. The Item 1A text is cut off, so this is not the full set of risk factors.",
+      "error": null
+    },
+    {
+      "task_id": 5,
+      "question": "Compare Apple's revenue year over year",
+      "company": "AAPL",
+      "elapsed_seconds": 12.709993,
+      "fact_checks": {
+        "has_report": true,
+        "has_summary": true,
+        "has_findings": true,
+        "has_citations": true,
+        "no_error": true,
+        "facts_found": 3,
+        "facts_required": 3,
+        "facts_pass": true,
+        "facts_details": [
+          "revenue",
+          "fiscal",
+          "billion OR million"
+        ],
+        "fact_check_passed": true
+      },
+      "llm_judge": {
+        "score": null,
+        "explanation": "LLM judge error: Expecting value: line 1 column 1 (char 0)"
+      },
+      "passed": true,
+      "summary": "Apple's total net sales for fiscal 2025 were $416,161 million, up 6% from $391,035 million in fiscal 2024 (a $25,126 million increase). Fiscal 2024 had in turn grown 2% from $383,285 million in fiscal 2023. Growth in 2025 was led by Services (+14%), Mac (+12%) and iPhone (+4%), while Greater China and Wearables, Home and Accessories declined.",
+      "error": null
+    }
+  ]
+}

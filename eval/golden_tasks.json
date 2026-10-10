@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "question": "What are Apple's main risk factors?",
+    "company": "AAPL",
+    "expected_items": ["1A"],
+    "verification": {
+      "type": "fact_check",
+      "required_facts": [
+        "global economic",
+        "supply chain",
+        "tariff",
+        "geopolitical",
+        "competition"
+      ],
+      "min_facts_required": 3,
+      "llm_judge_criteria": "The response should identify specific risk categories from Apple's 10-K Item 1A. It should mention macroeconomic risks, supply chain concentration (especially in Asia), trade/tariff risks, and competitive pressures. The response should cite the 10-K filing."
+    }
+  },
+  {
+    "id": 2,
+    "question": "What is Microsoft's cloud revenue?",
+    "company": "MSFT",
+    "expected_items": ["7", "8"],
+    "verification": {
+      "type": "fact_check",
+      "required_facts": [
+        "Microsoft Cloud",
+        "Azure",
+        "billion"
+      ],
+      "min_facts_required": 2,
+      "llm_judge_criteria": "The response should provide a specific dollar amount for Microsoft Cloud revenue (expected ~$200+ billion for recent fiscal year). It should mention Azure growth rates. Numbers should be sourced from the 10-K MD&A section."
+    }
+  },
+  {
+    "id": 3,
+    "question": "Describe Tesla's business model",
+    "company": "TSLA",
+    "expected_items": ["1"],
+    "verification": {
+      "type": "fact_check",
+      "required_facts": [
+        "electric",
+        "vehicle",
+        "energy"
+      ],
+      "required_products": ["Model 3", "Model Y", "Model S", "Model X", "Cybertruck", "Powerwall", "Megapack"],
+      "min_products_required": 2,
+      "min_facts_required": 2,
+      "llm_judge_criteria": "The response should describe Tesla's two main business segments: Automotive (electric vehicles) and Energy Generation/Storage. It should mention specific vehicle models and/or energy products."
+    }
+  },
+  {
+    "id": 4,
+    "question": "What are Amazon's main risk factors?",
+    "company": "AMZN",
+    "expected_items": ["1A"],
+    "verification": {
+      "type": "fact_check",
+      "required_facts": [
+        "competition",
+        "regulatory",
+        "economic"
+      ],
+      "min_facts_required": 2,
+      "llm_judge_criteria": "The response should identify key risk factors from Amazon's 10-K Item 1A, such as competition, regulatory risks, economic conditions, or operational risks. The response should cite the 10-K filing."
+    }
+  },
+  {
+    "id": 5,
+    "question": "Compare Apple's revenue year over year",
+    "company": "AAPL",
+    "expected_items": ["7", "8"],
+    "verification": {
+      "type": "fact_check",
+      "required_facts": [
+        "revenue",
+        "fiscal",
+        "billion OR million"
+      ],
+      "min_facts_required": 2,
+      "llm_judge_criteria": "The response should provide specific revenue figures for at least two fiscal years. It should calculate or state the year-over-year change. Apple's annual revenue is typically $350-420 billion."
+    }
+  }
+]

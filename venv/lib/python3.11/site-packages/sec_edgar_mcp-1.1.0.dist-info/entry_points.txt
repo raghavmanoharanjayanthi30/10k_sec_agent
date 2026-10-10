@@ -1,0 +1,2 @@
+[console_scripts]
+sec-edgar-mcp = sec_edgar_mcp.server:main
